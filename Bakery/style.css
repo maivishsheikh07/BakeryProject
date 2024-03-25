@@ -10,11 +10,16 @@ body {
     min-width: 100vw;
 }
 
+/* navbar area */
+
 .header {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    background: yellow;
+    /* background: rgb(255, 252, 209); */
+    position: relative;
+    width: 100%;
+    margin: auto;
 }
 
 .logo img {
@@ -49,27 +54,71 @@ body {
 }
 
 .navbar ul li a:hover {
-    background-color: #ff817d;
-    color: #ffffff;
+    background-color: #ffadaa;
+    color: #fddc5c;
 }
 
-.btn {
-    width: 12%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+#sign {
+    background: #fff;
+    color: #000;
+    padding: 5px 15px;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #000;
+    border-radius: 5px;
 }
 
-.btn img {
-    width: 35px;
+#sign:hover {
+    border: 2px solid #ffadaa;
+    background: #ffadaa;
+    color: #ffa;
 }
 
-@media (max-width: 1200px) {
+#check {
+    display: none;
+}
+
+.icons {
+    /* position: absolute; */
+    margin-left: 10%;
+    font-size: 2.8rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive settings */
+
+@media (max-width: 1068px) {
     .navbar {
         display: none;
     }
+
     .header {
         justify-content: space-between;
-        padding: 0 20px;
+        padding: 0 10%;
+        margin: auto;
+    }
+
+    .icons {
+        display: inline-flex;
+    }
+
+    #check:checked~.icons #menu-icons{
+        display: none;
+    }
+
+    .icons #close-icons{
+        display: none;
+    }
+
+    #check:checked~.icons #close-icons{
+        display: block;
+    }
+}
+
+@media (max-width: 657px) {
+    .btn {
+        display: none;
     }
 }
