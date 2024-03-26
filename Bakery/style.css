@@ -24,8 +24,6 @@ body {
 
 .logo img {
     width: 150px;
-    border-radius: 100%;
-    border: 5px solid #fff48e;
 }
 
 .navbar {
@@ -115,7 +113,7 @@ body {
     position: relative;
     padding: 10%;
     padding-bottom: 15%;
-    background: #fffacb;
+    background: #fffde6;
 }
 
 .content {
@@ -130,6 +128,11 @@ body {
 
 #home h3 span {
     color: #ffadaa;
+    background: linear-gradient(90deg, #fac2c0, #ffadaa, #ff817d);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-size: cover;
     font-weight: 900;
     font-size: 46px;
     font-family: 'Roboto';
@@ -139,11 +142,14 @@ body {
     font-size: 70px;
 }
 
-#bread {
-    width: 900px;
-    position: absolute;
-    right: 500px;
-    top: 100px;
+.entire {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bot img {
+    width: 800px;
 }
 
 #shop {
@@ -161,34 +167,38 @@ body {
     top: 70%;
 }
 
-#mac {
+#shop:hover {
+    background: #dbcb36;
+}
+
+.bgimg {
     position: absolute;
-    left: 30px;
-    bottom: 30px;
     width: 130px;
     border-radius: 50px;
 }
 
-#pret {
-    position: absolute;
-    left: 43rem;
-    top: 30px;
-    width: 130px;
-    border-radius: 50px;
+#mac {
+    left: 30px;
+    bottom: 30px;
 }
+
+#pret {
+    left: 53rem;
+    top: 100px;
+}
+
 #donut {
-    position: absolute;
     left: 106rem;
-    top: 50px;
-    width: 130px;
-    border-radius: 50px;
+    top: 30px;
 }
 #cros {
-    position: absolute;
     left: 6rem;
     top: 50px;
-    width: 130px;
-    border-radius: 50px;
+}
+
+#cup {
+    right: 46rem;
+    bottom: 20px;
 }
 
 /* responsive settings */
