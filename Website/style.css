@@ -179,6 +179,43 @@ body {
     background-color: var(--main-color);
 }
 
-.display .items {
-    border: 2px solid black;
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6% 4%;
+}
+
+.products .items {
+    /* border: 2px solid black; */
+    padding: 2% 3%;
+    border-left: 0.2rem solid var(--primary-color);
+    /* border-right: 2px solid var(--primary-color); */
+}
+
+.products .one {
+    border: none;
+}
+
+.products .items img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.products .items h4 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Arya';
+}
+
+.products .items p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-family: 'Poppins';
+}
+
+.products .cookie img{
+    background: #fff;
 }
