@@ -58,15 +58,15 @@ body {
 .header .navbar a {
     color: #fff;
     font-size: 2.2rem;
-    margin: 0 5rem;
+    margin: 0 3rem;
     padding: 0.3rem 1rem;
 }
 
 .header .navbar a:hover{
     color: var(--primary-color);
     border-bottom: 0.3rem solid var(--primary-color);
-    border-top: 0.3rem solid var(--primary-color);
 }
+
 
 .header .icons {
     display: flex;
@@ -131,32 +131,54 @@ body {
 /* home section */
 
 .home {
-    margin: 5.75% 0;
+    margin-top: 5.75%;
     width: 100%;
     height: 90vh;
     color: var(--primary-color);
     background: pink;
-    padding: 7% 10%;
-    background-image: url(media/bg.jpg);
+    background-image: url('media/oh.jpeg');
+    /* background-image: url('media/bg\ \(4\).jpeg'); */
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    align-items: center;
 }
 
-.hero {
-    width: 40%;
+.home .hero {
+    margin-left: 7%;
+    width: 36%;
 }
 
 
-.home h2 {
+.home .hero h2 {
     font-size: 5.5rem;
     width: 90%;
     margin: 10px 0;
 }
 
-.home p {
+.home .hero p {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 10px 0;
     font-family: 'Arya';
     line-height: 2rem;
+    /* margin-bottom: 4rem; */
+}
+
+.home .hero a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1.3rem 3rem;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+}
+
+.home .hero a:hover {
+    background-color: var(--main-color);
+}
+
+.display .items {
+    border: 2px solid black;
 }
