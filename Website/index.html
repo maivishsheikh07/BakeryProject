@@ -13,22 +13,29 @@
             <img src="media/logo.png" alt="">
         </div>
         <nav class="navbar">
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
             <a href="#">About</a>
             <a href="#">Shop</a>
             <a href="#">Blog</a>
             <a href="#">Contact</a>
         </nav>
         <div class="icons">
-            <div class="search"><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div class="cart"><i class="fa-solid fa-cart-shopping"></i></div>
-            <div class="menu"><i class="fa-solid fa-bars"></i></div>
+            <button onclick="mySearch()" title="search" class="search link"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <a href="" title="login" class="login link"><i class="fa-solid fa-user"></i></a>
+            <div class="menu link"><i class="fa-solid fa-bars"></i></div>
         </div>
-        <div class="search-bar">
+        <div class="search-bar" id="bar">
             <input type="search" name="search" id="searchBox" placeholder="search...">
-            <label for="searchBox" class="fas fa-search "></label>
+            <label for="searchBox" class="fa-solid fa-magnifying-glass"></label>
         </div>
     </header>
+    <section class="home" id="home">
+        <div class="hero">
+            <h2>Crafted with Passion, Baked with Love</h2>
+            <p>Step into our world of artisanal baking, where passion meets expertise in every recipe we create. From the crackle of our freshly baked bread to the delicate sweetness of our pastries, each bite is a testament to our commitment to quality and craftsmanship.</p>
+            <a href="" class="btn">SHOP NOW</a>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>

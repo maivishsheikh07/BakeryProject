@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aladin&display=swap');
 
 :root {
     /* --main-color: #ff6e69;
     --primary-color: #5b00c4; */
     --main-color: #ff9187;
-    --primary-color: #b8006b;
+    --primary-color: #5b0375;
     --bg-color: #ffeeec;
 }
 
@@ -13,7 +14,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Aladin', 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
 
@@ -31,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 7%;
+    padding: 1.2rem 7%;
     position: fixed;
     top: 0;
     left: 0;
@@ -39,8 +40,13 @@ body {
     z-index: 1000;
 }
 
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
 .header .logo img {
-    width: 13rem;
+    width: 10rem;
     border-radius: 50%;
     border: 2px solid #000;
     
@@ -48,13 +54,12 @@ body {
 
 .header .navbar a {
     color: #fff;
-    font-size: 2.6rem;
+    font-size: 3rem;
     margin: 0 5rem;
-    font-weight: 600;
     padding: 0.5rem 1rem;
 }
 
-.header .navbar a:hover {
+.header .navbar a:hover{
     color: var(--primary-color);
     border-bottom: 0.3rem solid var(--primary-color);
     border-top: 0.3rem solid var(--primary-color);
@@ -64,14 +69,16 @@ body {
     display: flex;
 }
 
-.header .icons div {
+.header .icons .link {
     color: #fff;
     cursor: pointer;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0 2.5rem;
+    background: none;
+    border: none;
 }
 
-.header .icons div:hover {
+.header .icons .link:hover {
     color: var(--primary-color);
 }
 
@@ -82,34 +89,62 @@ body {
 /* Search Bar */
 
 .header .search-bar {
-    position: absolute;
-    top: 110%;
-    right: 7%;
-    width: 60rem;
-    height: 7rem;
-    /* border: 1px solid black; */
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    width: 50rem;
+    height: 5rem;
     background: #fff;
+    border-radius: 10px;
+    transition: 0.6s ease
+}
+
+.header .search-bar.active {
+    right: 7%;
 }
 
 .header .search-bar input {
     width: 100%;
     height: 100%;
-    padding: 2rem 1.4rem;
-    padding: 1.4rem;
+    padding: 0 1.4rem;
     font-size: 2.7rem;
     color: #000;
     border: none;
+    border-radius: 10px;
 }
 
 .header .search-bar label {
-    font-size: 3.2rem;
-    margin: 0 2rem;
-    width: 4rem;
+    font-size: 2.7rem;
+    margin: 0 1rem;
     cursor: pointer;
 }
 
 .header .search-bar label:hover {
     color: var(--main-color)
+}
+
+/* home section */
+
+.home {
+    margin: 6.4% 0;
+    width: 100%;
+    color: var(--primary-color);
+    background: pink;
+    padding: 10%;
+}
+
+.hero {
+    width: 40%;
+}
+
+
+.home h2 {
+    font-size: 6.7rem;
+    width: 90%;
+}
+
+.home p {
+    font-size: 3.2rem;
 }
