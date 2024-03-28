@@ -8,7 +8,7 @@
     /* --primary-color: #5b00c4; */
     /* --main-color: #ff9187; */
     --primary-color: #640082;
-    --bg-color: #ffeeec;
+    --bg-color: #f5eff1;
 }
 
 * {
@@ -179,43 +179,104 @@ body {
     background-color: var(--main-color);
 }
 
-.products {
+.items {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 6% 4%;
 }
 
-.products .items {
-    /* border: 2px solid black; */
-    padding: 2% 3%;
+.items div {
+    padding: 2% 4%;
     border-left: 0.2rem solid var(--primary-color);
-    /* border-right: 2px solid var(--primary-color); */
 }
 
-.products .one {
+.items .one {
     border: none;
 }
 
-.products .items img {
+.items div img {
     width: 250px;
     height: 150px;
     border-radius: 10px;
 }
 
-.products .items h4 {
-    font-size: 2.5rem;
+.items div a {
+    display: block;
+    font-size: 2.7rem;
     text-align: center;
+    margin: 1rem auto;
+    font-family: 'Arya';
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.items div p {
+    font-size: 1.5rem;
     margin: 1rem 0;
+    text-align: justify;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.items .cookie img{
+    background: #fff;
+}
+
+.offer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem 0;
+}
+
+.offer div {
+    border: 0.2rem solid var(--main-color);
+    width: 57rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 0 4rem;
+    border-radius: 1rem;
+}
+
+.offer div h3 {
+    font-size: 2.6rem;
     font-family: 'Arya';
 }
 
-.products .items p {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-    font-family: 'Poppins';
+.offer div h2 {
+    font-size: 3.8rem;
+    width: 23rem;
 }
 
-.products .cookie img{
-    background: #fff;
+.offer .c1 {
+    background: url('media/background3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.offer .c2 {
+    background: url('media/bg3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.offer div a {
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    margin: 2rem 0;
+    width: 10.8rem;
+}
+
+.offer div a:hover {
+    background-color: var(--main-color);
 }
