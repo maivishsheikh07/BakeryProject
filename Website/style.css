@@ -183,11 +183,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 6% 4%;
+    padding: 8% 9% 0;
 }
 
 .items div {
-    padding: 2% 4%;
+    padding: 2%;
     border-left: 0.2rem solid var(--primary-color);
 }
 
@@ -221,13 +221,15 @@ body {
 
 .items .cookie img{
     background: #fff;
+    width: 28rem;
+    padding: 10px 35px;
 }
 
 .offer {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 2rem 0;
+    padding: 10% 2%;
 }
 
 .offer div {
@@ -279,4 +281,43 @@ body {
 
 .offer div a:hover {
     background-color: var(--main-color);
+}
+
+.products h3 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.products .line {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.products .line div {
+    border: 1px solid black;
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+.products .line div img {
+    width: 28rem;
+    height: 18rem;
+    background: #ffffff;
+    border-radius: 0.4rem;
+}
+
+.products .line div a{
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.products .line div p {
+    font-size: 2rem;
+    text-align: center;
 }
