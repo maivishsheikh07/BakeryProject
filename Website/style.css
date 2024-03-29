@@ -8,7 +8,10 @@
     /* --primary-color: #5b00c4; */
     /* --main-color: #ff9187; */
     --primary-color: #640082;
-    --bg-color: #f5eff1;
+    --bg-color: #ffe5ed;
+    --main-font: 'Aladin';
+    --primary-font: 'Arizonia';
+    --secondary-font: 'Arya';
 }
 
 * {
@@ -16,7 +19,7 @@
     padding: 0;
     box-sizing: border-box;
     outline: none;
-    font-family: 'Aladin', 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--primary-font), 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
 
@@ -60,6 +63,7 @@ body {
     font-size: 2.2rem;
     margin: 0 3rem;
     padding: 0.3rem 1rem;
+    font-family: var(--main-font);
 }
 
 .header .navbar a:hover{
@@ -149,7 +153,6 @@ body {
     width: 36%;
 }
 
-
 .home .hero h2 {
     font-size: 5.5rem;
     width: 90%;
@@ -160,9 +163,8 @@ body {
     font-size: 1.8rem;
     font-weight: 600;
     margin: 10px 0;
-    font-family: 'Arya';
+    font-family: var(--secondary-font);
     line-height: 2rem;
-    /* margin-bottom: 4rem; */
 }
 
 .home .hero a {
@@ -173,6 +175,7 @@ body {
     font-size: 2rem;
     border-radius: 1rem;
     margin: 2rem 0;
+    font-family: var(--main-font);
 }
 
 .home .hero a:hover {
@@ -183,8 +186,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8% 9% 0;
+    padding: 8% 9%;
 }
+
 
 .items div {
     padding: 2%;
@@ -206,9 +210,13 @@ body {
     font-size: 2.7rem;
     text-align: center;
     margin: 1rem auto;
-    font-family: 'Arya';
+    font-family: var(--secondary-font);
     color: var(--primary-color);
     font-weight: 700;
+}
+
+.items div a:hover {
+    color: var(--main-color);
 }
 
 .items div p {
@@ -225,82 +233,81 @@ body {
     padding: 10px 35px;
 }
 
-.offer {
+.about {
+    padding: 7% 2%;
+    border-top: 1px solid var(--primary-color);
+    width: 90%;
+    margin: auto;
+}
+
+.about .center {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-evenly;
-    padding: 10% 2%;
 }
 
-.offer div {
-    border: 0.2rem solid var(--main-color);
-    width: 57rem;
-    height: 30rem;
-    display: flex;
-    flex-direction: column;
-    /* align-items: center; */
-    justify-content: center;
-    padding: 0 4rem;
+.about .center .left {
+    width: 45%;
+    text-align: justify;
+}
+
+.about .center .right img {
+    width: 38rem;
+    height: 48rem;
+    border: 2px solid #000;
+    padding: 2rem;
     border-radius: 1rem;
+    background: #fff;
 }
 
-.offer div h3 {
-    font-size: 2.6rem;
-    font-family: 'Arya';
-}
-
-.offer div h2 {
-    font-size: 3.8rem;
-    width: 23rem;
-}
-
-.offer .c1 {
-    background: url('media/background3.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
-
-.offer .c2 {
-    background: url('media/bg3.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right;
-}
-
-.offer div a {
-    display: inline-block;
-    background-color: var(--primary-color);
-    padding: 1rem 2rem;
-    color: #fff;
-    font-size: 1.6rem;
-    border-radius: 1rem;
-    margin: 2rem 0;
-    width: 10.8rem;
-}
-
-.offer div a:hover {
-    background-color: var(--main-color);
-}
-
-.products h3 {
+.title {
     font-size: 5rem;
     text-align: center;
     margin-bottom: 4rem;
 }
 
-.products .line {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.about .center .left p {
+    font-size: 1.9rem;
+    font-family: var(--secondary-font);
+    line-height: 2.7rem;
+    margin: 1.5rem 0;
+}
+
+.about .center .left a {
+    display: inline-block;
+    font-size: 2rem;
+    font-family: var(--main-font);
+    background-color: var(--primary-color);
+    padding: 0.9rem 2rem;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 0.7rem;
+    margin-top: 3rem;
+}
+
+
+.about .center .left a:hover {
+    background-color: var(--main-color);
+}
+
+
+.products {
+    padding: 5% 1%;
+    border-top: 1px solid var(--primary-color);
     width: 90%;
     margin: auto;
+}
+
+.products .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .products .line div {
     border: 1px solid black;
     padding: 2rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .products .line div img {
@@ -312,12 +319,110 @@ body {
 
 .products .line div a{
     display: block;
-    font-size: 2rem;
+    font-size: 2.6rem;
     text-align: center;
     margin: 1rem 0;
+    font-family: var(--main-font);
+    color: var(--primary-color);
+}
+
+.products .line div a:hover {
+    color: var(--main-color);
 }
 
 .products .line div p {
     font-size: 2rem;
     text-align: center;
+    font-family: var(--main-font);
+}
+
+.recipe {
+    padding: 5% 1%;
+    border-top: 1px solid var(--primary-color);
+    width: 90%;
+    margin: auto;
+}
+
+.recipe .catalouge {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem 0;
+}
+
+.recipe .catalouge .cards {
+    position: relative;
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 4px 5px 3px 3px #6a6a6a4e, -0.4px -0.1px 3px 3px rgba(95, 95, 95, 0.306);
+}
+
+.recipe h3 {
+    margin-bottom: 1rem;
+}
+
+.recipe .para{
+    font-size: 1.7rem;
+    font-family: var(--secondary-font);
+    width: 54rem;
+    margin: auto;
+    text-align: center;
+}
+
+.recipe .catalouge .cards p {
+    font-size: 2.9rem;
+    text-align: center;
+    font-family: var(--main-font);
+    margin: 4rem 0 1rem;
+    cursor: pointer;
+}
+
+.recipe .catalouge .cards p:hover {
+    color: var(--primary-color);
+}
+
+.recipe .catalouge .cards .text {
+    font-size: 1.4rem;
+    font-family: var(--secondary-font);
+    width: 22rem;
+    text-align: center;
+    margin: auto;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+}
+
+.recipe .catalouge .cards img {
+    width: 38rem;
+    height: 23rem;
+    border-radius: 0.7rem;
+}
+
+.recipe .catalouge .cards a {
+    position: absolute;
+    top: 21rem;
+    right: 3rem;
+    border-radius: 5rem;
+    background-color: #fff;
+    font-size: 2.2rem;
+    padding: 1.1rem 1.3rem;
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.recipe .catalouge .cards a:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.footer .boxes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer .boxes .services {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
