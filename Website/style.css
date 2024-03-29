@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Arya:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
 
+
 :root {
     --main-color: #ff618e;
     /* --primary-color: #5b00c4; */
@@ -51,26 +52,28 @@ body {
     align-items: center;
 }
 
-.header .logo img {
-    width: 7rem;
-    border-radius: 50%;
-    border: 2px solid #000;
-    
+.header .logo h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-family: 'Bonheur Royale';
+    cursor: pointer;
 }
 
 .header .navbar a {
     color: #fff;
     font-size: 2.2rem;
-    margin: 0 3rem;
-    padding: 0.3rem 1rem;
+    margin: 0 2rem;
+    padding: 0.5rem 2rem;
     font-family: var(--main-font);
 }
 
-.header .navbar a:hover{
-    color: var(--primary-color);
-    border-bottom: 0.3rem solid var(--primary-color);
+.header .navbar a:hover {
+    border-bottom: 0.5rem solid var(--primary-color);
 }
 
+.underline {
+    border-bottom: 0.5rem solid var(--primary-color);
+}
 
 .header .icons {
     display: flex;
@@ -115,11 +118,12 @@ body {
 .header .search-bar input {
     width: 100%;
     height: 100%;
-    padding: 0 1.4rem;
-    font-size: 2.7rem;
+    padding: 0.4rem 1.4rem;
+    font-size: 1.6rem;
     color: #000;
     border: none;
     border-radius: 10px;
+    font-family: var(--secondary-font);
 }
 
 .header .search-bar label {
