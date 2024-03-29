@@ -420,7 +420,7 @@ body {
 }
 
 .footer {
-    padding: 5%;
+    padding: 8% 6%;
     border-top: 1px solid var(--primary-color);
     margin: auto;
     background-color: var(--primary-color);
