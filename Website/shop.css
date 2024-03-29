@@ -210,7 +210,6 @@ body {
     font-family: var(--secondary-font);
 }
 
-
 .shoparea .center {
     display: flex;
     align-items: center;
@@ -279,7 +278,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 .slider h3 {
@@ -288,7 +287,12 @@ body {
     border: 1px solid var(--main-color);
     padding: 1.2rem 2rem;
     border-radius: 5rem;
-    margin: 2rem;
+    margin: 0 2rem;
+}
+
+.slider h3:first-child {
+    background-color: var(--main-color);
+    color: #fff;
 }
 
 .slider h3:hover {
