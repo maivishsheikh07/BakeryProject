@@ -417,40 +417,61 @@ body {
 
 .footer {
     padding: 5%;
-    background-color: var(--main-color);
-}
-
-.footer .boxes {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 90%;
+    border-top: 1px solid var(--primary-color);
+    /* width: 90%; */
     margin: auto;
-    border-bottom: 1px solid var(--primary-color);
-    padding-bottom: 5rem;
-}
-
-.footer .boxes .services {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 25%;
-}  
-
-.footer .boxes .services .start i {
-    font-size: 3rem;
-    padding: 1.4rem;
-    border-radius: 5rem;
-    color: #fff;
     background-color: var(--primary-color);
 }
 
-.footer .boxes .services .end h4{
-    font-family: var(--main-font);
-    font-size: 2.6rem;
+.footer a {
+    font-size: 6rem;
+    color: #fff;
 }
 
-.footer .boxes .services .end p{
+.footer a:hover {
+    color: var(--main-color);
+}
+
+.footer .C {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 13%;
+    margin: 1rem 0;
+}
+
+.area div ul li {
+   list-style: none;
+}
+
+.area div ul li a {
+    font-size: 1.9rem;
     font-family: var(--secondary-font);
-    font-size: 1.6rem;
+    color: #fff;
+}
+
+.area div ul li a:hover {
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.social {
+    font-size: 3.4rem;
+    color: #fff;
+}
+
+.social i {
+    margin: 2rem 3rem;
+    margin-left: 0;
+    /* border: 2px solid black; */
+}
+
+.R {
+    text-align: right;
 }
