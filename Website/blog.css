@@ -142,6 +142,18 @@ body {
     margin: auto;
 }
 
+.recipe h3 {
+    margin-bottom: 1rem;
+}
+
+.recipe .para{
+    font-size: 1.7rem;
+    font-family: var(--secondary-font);
+    width: 54rem;
+    margin: auto;
+    text-align: center;
+}
+
 .recipe .catalouge {
     display: flex;
     align-items: center;
@@ -153,19 +165,7 @@ body {
     position: relative;
     border-radius: 1rem;
     padding-bottom: 1rem;
-    box-shadow: 4px 5px 3px 3px #6a6a6a4e, -0.4px -0.1px 3px 3px rgba(95, 95, 95, 0.306);
-}
-
-.recipe h3 {
-    margin-bottom: 1rem;
-}
-
-.recipe .para{
-    font-size: 1.7rem;
-    font-family: var(--secondary-font);
-    width: 54rem;
-    margin: auto;
-    text-align: center;
+    box-shadow: 4px 5px 3px 3px #6a6a6a4e, -0.4px -0.1px 3px 3px rgba(95, 95, 95, 0.306);    
 }
 
 .recipe .catalouge .cards p {
@@ -191,8 +191,8 @@ body {
 }
 
 .recipe .catalouge .cards img {
-    width: 38rem;
-    height: 23rem;
+    width: 35rem;
+    height: 19rem;
     border-radius: 0.7rem;
 }
 
