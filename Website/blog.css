@@ -136,39 +136,45 @@ body {
 }
 
 .recipe {
-    padding: 5% 1%;
-    border-top: 1px solid var(--primary-color);
-    width: 90%;
-    margin: auto;
+    margin-top: 5.75%;
+    width: 100%;
+    height: 60vh;
+    color: var(--primary-color);
+    background: #ffc0cb;
+    /* background-image: url('media/oh.jpeg'); */
+    background: linear-gradient(180deg, #0000009a, #0000009a), url('media/bg\ \(1\).jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10%;
 }
 
-.recipe h3 {
+.title {
+    font-size: 7rem;
     margin-bottom: 1rem;
+    color: #fff;
+    text-align: end;
 }
 
-.recipe .para{
-    font-size: 1.7rem;
-    font-family: var(--secondary-font);
-    width: 54rem;
-    margin: auto;
-    text-align: center;
+.bake {
+    padding: 5% 2%;
 }
 
-.recipe .catalouge {
+.bake .catalouge {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     margin: 3rem 0;
 }
 
-.recipe .catalouge .cards {
+.bake .catalouge .cards {
     position: relative;
     border-radius: 1rem;
     padding-bottom: 1rem;
     box-shadow: 4px 5px 3px 3px #6a6a6a4e, -0.4px -0.1px 3px 3px rgba(95, 95, 95, 0.306);    
 }
 
-.recipe .catalouge .cards p {
+.bake .catalouge .cards p {
     font-size: 2.9rem;
     text-align: center;
     font-family: var(--main-font);
@@ -176,11 +182,11 @@ body {
     cursor: pointer;
 }
 
-.recipe .catalouge .cards p:hover {
+.bake .catalouge .cards p:hover {
     color: var(--primary-color);
 }
 
-.recipe .catalouge .cards .text {
+.bake .catalouge .cards .text {
     font-size: 1.4rem;
     font-family: var(--secondary-font);
     width: 22rem;
@@ -190,15 +196,15 @@ body {
     margin-bottom: 1rem;
 }
 
-.recipe .catalouge .cards img {
-    width: 35rem;
-    height: 19rem;
+.bake .catalouge .cards img {
+    width: 38rem;
+    height: 20rem;
     border-radius: 0.7rem;
 }
 
-.recipe .catalouge .cards a {
+.bake .catalouge .cards a {
     position: absolute;
-    top: 21rem;
+    top: 18rem;
     right: 3rem;
     border-radius: 5rem;
     background-color: #fff;
@@ -207,11 +213,13 @@ body {
     display: flex;
     align-items: center;
     color: var(--primary-color);
+    transition: 0.5s ease;
 }
 
-.recipe .catalouge .cards a:hover {
+.bake .catalouge .cards a:hover {
     background: var(--primary-color);
     color: #fff;
+    transform: rotate(360deg);
 }
 
 /* footer section */
