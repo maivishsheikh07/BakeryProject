@@ -142,7 +142,7 @@ body {
     color: var(--primary-color);
     background: #ffc0cb;
     /* background-image: url('media/oh.jpeg'); */
-    background: linear-gradient(180deg, #0000009a, #0000009a), url('media/bg\ \(1\).jpeg');
+    background: linear-gradient(180deg, #0000009a, #0000009a), url('media/bg1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
