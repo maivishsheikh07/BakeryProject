@@ -9,9 +9,10 @@
     --primary-color: #640082;
     --bg-color: #ffe5ed;
     --main-font: 'Aladin';
-    --primary-font: 'Arizonia';
-    --secondary-font: 'Arya';
-    --sidebar-color: #e4e4e4;
+    --secondary-font: 'Arizonia';
+    --primary-font: 'Arya';
+    --sidebar-color: #e9e9e9;
+    --border-color: #b9b9b9;
 }
 
 * {
@@ -123,7 +124,7 @@ body {
     color: #000;
     border: none;
     border-radius: 10px;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
 
 .header .search-bar label {
@@ -136,6 +137,14 @@ body {
     color: var(--main-color)
 }
 
+.title {
+    font-size: 8rem;
+    text-align: end;
+    margin-bottom: 4rem;
+    color: #fff;
+    font-family: var(--secondary-font);
+}
+
 .recipe {
     margin-top: 5.75%;
     width: 100%;
@@ -143,7 +152,7 @@ body {
     color: var(--primary-color);
     background: #ffc0cb;
     /* background-image: url('media/oh.jpeg'); */
-    background: linear-gradient(180deg, #0000009a, #0000009a), url('media/bg\ \(1\).jpeg');
+    background: linear-gradient(180deg, #0000009a, #0000009a), url('media/bg1.jpeg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -164,7 +173,7 @@ body {
     background-color: var(--sidebar-color);
     border-radius: 0.5rem;
     padding: 3rem;
-    width: 36.5rem;
+    width: 40rem;
     height: 100%;
     padding-top: 2rem;
     margin-top: 5rem;
@@ -172,14 +181,14 @@ body {
 
 .h {
     font-size: 2.4rem;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     margin: 0.5rem 0.3rem;
 }
 
 .here {
     display: flex;
     align-items: center;
-    width: 30rem;
+    width: 34rem;
     height: 5rem;
     background: #fff;
     border-radius: 1rem;
@@ -194,11 +203,11 @@ body {
     color: #000;
     border: none;
     border-radius: 10px;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     background-color: transparent;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
-    border: 0.1rem solid #b9b9b9;
+    border: 0.1rem solid var(--border-color);
 }
 
 .here label {
@@ -216,11 +225,29 @@ body {
 }
 
 .cate p {
-    border: 0.1rem solid #000;
+    border: 0.1rem solid var(--border-color);
     border-radius: 1rem;
-    padding: 1rem;
-    font-size: 2rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.9rem;
+    margin: 1.5rem 0;
+    font-family: var(--primary-font);
+    transition: 0.3s ease;
+}
 
+.cate p:hover {
+    color: #fff;
+    background-color: var(--main-color);
+    border: 0.1rem solid var(--main-color);
+}
+
+.posts {
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+}
+
+.posts img {
+    width: 15rem;
 }
 
 /* footer section */
@@ -236,6 +263,7 @@ body {
 .footer a {
     font-size: 6rem;
     color: #fff;
+    font-family: var(--secondary-font);
 }
 
 .footer a:hover {
@@ -265,7 +293,7 @@ body {
 
 .area div ul li a {
     font-size: 1.9rem;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     color: #fff;
 }
 
@@ -292,12 +320,12 @@ body {
 
 .R h3 {
     font-size: 2.4rem;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
 
 .R p {
     font-size: 1.5rem;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
 }
 
 .R .news {
@@ -310,7 +338,7 @@ body {
     font-size: 1.6rem;
     padding: 0.7rem 0.8em;
     width: 350px;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     background-color: transparent;
     color: #fff;
     border: 1px solid #fff;
@@ -318,7 +346,7 @@ body {
 
 .R label {
     font-size: 1.6rem;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     border: 1px solid #fff;
     padding: 0.7rem 1rem;
 }
@@ -332,7 +360,7 @@ body {
 
 .links p {
     font-size: 1.8rem;
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     color: #fff;
     padding-right: 5rem;
     border-right: 0.1rem solid var(--main-color);
@@ -352,14 +380,14 @@ body {
 }
 
 .credits span {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 2rem;
     color: #fff;
     margin-right: 0.4rem;
 }
 
 .credits p {
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 1.4rem;
     color: #fff;
 }
