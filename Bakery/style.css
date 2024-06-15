@@ -1,3 +1,12 @@
+:root {
+    --main-color: #ffafcc;
+    --primary-color: #0077b6;
+    --bg-color: #ffe5ed;
+    --main-font: 'Aladin';
+    --secondary-font: 'Arizonia';
+    --primary-font: 'Arya';
+}
+
 /* header section */
 
 .header {
@@ -252,4 +261,13 @@
 
 .credits p i {
     margin: 0 1rem;
+}
+
+@media (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+
+
+
 }
